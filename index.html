@@ -1,0 +1,371 @@
+
+<html lang="en">
+  <head>
+      <!-- Header settings -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Supri Bengkel Otomotif</title>
+      <!-- END Header settings -->
+  
+      <!-- CDN Framework daisyUi -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- END CDN Framework daisyUi -->
+  
+  
+      <!-- Custom css -->
+      <link rel="stylesheet" href="./src/css/custom.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+      <!-- END Custom css -->
+  </head>
+  <body>
+      
+    <nav id="Navbar">
+      <div class="navbar bg-zinc-200 px-8 fixed z-10 w-full">
+        <div class="flex items-center justify-between w-full">
+          <a id="logo" class="btn btn-ghost text-xl">
+            <img src="./src/img/logo.png" alt="Logo" class="w-40">
+          </a>
+    
+          <!-- Button to toggle the menu in mobile -->
+          <div class="lg:hidden">
+            <button id="menu-toggle" class="btn btn-ghost text-gray-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+    
+          <!-- Menu items for desktop -->
+          <div class="hidden lg:flex flex-none">
+            <ul class="menu text-gray-700 menu-horizontal px-1">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="#Fasilitas">SERVICES</a></li>
+              <li><a href="">ARTICLE</a></li>
+              <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Dropdown for mobile -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-zinc-200 w-full mt-4">
+          <ul class="menu text-gray-700 p-4">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="#Fasilitas">SERVICES</a></li>
+            <li><a href="">ARTICLE</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+  
+      <!-- Section hero ATAS -->
+       <section class="Main-Hero flex" id="MainHero">
+          <div class="hero min-h-screen" style="background-image: url('./src/img/herobg.png');">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content flex text-neutral-content text-left items-start justify-start content-start">
+            <div class="">
+              <h3 class="mb-5 text-2xl tracking-widest text-zinc-50">OTOMOTIF SOLUTION</h3>
+              <h1 class="mb-5 text-5xl font-bold text-zinc-50">Supri Bengkel</h1>
+              <p class="mb-5 text-zinc-300 text-balance text-wrap" id="deskripsi">
+                  Dimulai dari sebuah bengkel sederhana di tahun 2002,<br>Bengkel Supri Mobil telah menempuh perjalanan panjang dan berdedikasi untuk memberikan layanan terbaik di bidang perawatan dan perbaikan kendaraan roda empat.
+              </p>
+              <a href="#Fasilitas" class="btn bg-yellow-400  text-gray-700 rounded-full hover:text-white">Lihat Lebih Lanjut</a>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- END Section hero ATAS -->
+  
+  
+  
+      <!-- Section hero SERVICES -->
+       <section class="Main-Hero flex" id="Fasilitas">
+          <div  class="hero min-h-screen bg-zinc-50">
+          <div class="hero-content text-center flex-col ">
+              <div class="">
+                  <h3 class="mb-5 text-2xl tracking-wide text-gray-700">OTOMOTIF SOLUTION</h3>
+                  <h1 class="mb-5 text-5xl font-bold text-blue-950">SUPRI BENGKEL</h1>
+              </div>
+              <div  class=" grid grid-cols-1 ">
+  
+                  <div class="card bg-blue-950 shadow-xl justify-center pb-6">
+                      <div class="card-body">
+                          <div class="mx-auto">
+                              <svg fill="#fff" viewBox="-1 0 19 19" width="40" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16.417 9.583A7.917 7.917 0 1 1 8.5 1.666a7.917 7.917 0 0 1 7.917 7.917zm-3.948-1.455-.758-1.955a.816.816 0 0 0-.726-.498H6.054a.816.816 0 0 0-.727.498L4.57 8.128a1.43 1.43 0 0 0-1.052 1.375v2.046a.318.318 0 0 0 .317.317h.496v1.147a.238.238 0 0 0 .238.237h.892a.238.238 0 0 0 .237-.237v-1.147h5.644v1.147a.238.238 0 0 0 .237.237h.892a.238.238 0 0 0 .238-.237v-1.147h.496a.318.318 0 0 0 .317-.317V9.503a1.43 1.43 0 0 0-1.052-1.375zm-7.445.582a.792.792 0 1 0 .792.792.792.792 0 0 0-.792-.792zm5.96-2.402a.192.192 0 0 1 .137.094l.65 1.676H5.267l.65-1.676a.192.192 0 0 1 .136-.094h4.93zm1.04 2.402a.792.792 0 1 0 .792.792.792.792 0 0 0-.791-.792z"></path></g></svg>
+  
+                          </div>
+                        <h2  class="card-title text-zinc-50 mx-auto">
+                          
+                          Spooring & Balacing
+                          <div class="badge badge-warning">BEST</div>
+                        </h2>
+                        <p class="text-balance text-wrap text-center text-zinc-300">
+                          Jaga performa dan keamanan kendaraan Anda dengan spooring & balancing rutin. Kami menawarkan layanan spooring 3D dan balancing presisi untuk memastikan kendaraan Anda dalam kondisi prima
+                        </p>
+                        <div class="card-actions justify-center">
+                          <div class="badge badge-outline">
+                              <div class="rating rating-xs">
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked="checked" disabled/>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+  
+  
+  
+                  
+              </div>
+  
+  
+  
+              <div class=" grid grid-cols-3 gap-4">
+  
+                  <div class="card bg-zinc-100 w-full shadow-xl">
+                      <div class="card-body">
+                        <h2 class="card-title text-blue-950">
+                          Tune-Up
+                          <div class="badge badge-warning">NEW</div>
+                        </h2>
+                        <p class="text-balance text-wrap text-justify text-zinc-400">
+                          Perpanjang usia mesin mobil Anda dengan tune-up berkala. Investasi kecil untuk mencegah kerusakan yang lebih parah.
+                        </p>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">
+                              <div class="rating rating-xs">
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked="checked" disabled/>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="card bg-zinc-100 w-full shadow-xl">
+                      <div class="card-body">
+                        <h2 class="card-title text-blue-950">
+                          Body Repair
+                          <div class="badge badge-warning">NEW</div>
+                        </h2>
+                        <p class="text-balance text-wrap text-justify text-zinc-400">
+                          Kembalikan kilau mobil Anda seperti baru! Layanan body repair profesional dengan hasil yang memuaskan.
+                        </p>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">
+                              <div class="rating rating-xs">
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked="checked" disabled/>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+  
+                  <div class="card bg-zinc-100 w-full shadow-xl">
+                      <div class="card-body">
+                        <h2 class="card-title text-blue-950">
+                          Jasa Perawatan Rutin
+                          <div class="badge badge-warning">NEW</div>
+                        </h2>
+                        <p class="text-balance text-wrap text-justify text-zinc-400">
+                          Rawat mobil Anda seperti merawat diri sendiri! Dengan perawatan rutin di bengkel kami, mobil Anda akan selalu dalam kondisi prima, siap menemani setiap perjalanan Anda. Kami menawarkan layanan lengkap, mulai dari ganti oli, filter, pengecekan rem dll.
+                        </p>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">
+                              <div class="rating rating-xs">
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked="checked" disabled/>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+  
+  
+  
+  
+                  
+              </div>
+          
+          </div>
+        </div>
+       </section>
+      <!-- END Section hero ATAS -->
+  
+  
+      <!-- Section OUR FEEDS -->
+       <section class="Main-Hero flex" id="MainHero">
+          <div class="hero min-h-screen bg-zinc-50">
+          <div class="hero-content text-center flex-col ">
+              <div class="">
+                  <h3 class="mb-5 text-2xl tracking-wide text-gray-700">OUR FEEDS</h3>
+                  <h1 class="mb-5 text-5xl font-bold text-blue-950">SUPRI BENGKEL</h1>
+              </div>
+  
+  
+  
+              <div class="grid grid-cols-3 grid-rows-3 gap-4 p-4">
+  
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="./src/img/thumb1.png" alt="Image 1" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 1</h2>
+                      <p class="text-gray-400">Description of the first image.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="./src/img/thumb2.png" alt="Image 2" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 2</h2>
+                      <p class="text-gray-400">Description of the second image.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 3" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 3</h2>
+                      <p class="text-gray-400">Description of the third image.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 4" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 4</h2>
+                      <p class="text-gray-400">Description of the fourth image.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 5" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 5</h2>
+                      <p class="text-gray-400">Description of the fifth image.</p>
+                    </div>
+                  </div>
+                
+                  <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300" alt="Image 6" class="w-full h-48 object-cover">
+                    <div class="card-body p-4">
+                      <h2 class="text-white text-lg font-semibold">Image 6</h2>
+                      <p class="text-gray-400">Description of the sixth image.</p>
+                    </div>
+                  </div>
+                
+                </div>
+                
+  
+  
+  
+  
+  
+  
+          </div>
+        </div>
+       </section>
+      <!-- END Section OUR FEEDS -->
+      
+  <!-- Section hero SPONSOR -->
+  <section class="Main-Hero flex" >
+    <div  class="hero min-h-screen bg-zinc-50">
+    <div class="hero-content text-center flex-col ">
+        <div class="">
+            <h3 class="mb-5 text-2xl tracking-wide text-gray-700">OUR SPONSOR</h3>
+            <h1 class="mb-5 text-5xl font-bold text-blue-950">SUPRI BENGKEL</h1>
+        </div>
+  
+  
+        <div class="container mx-auto p-6">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center">
+              <img src="./src/img/sponsor/1.png" alt="Sponsor 1" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/2.png" alt="Sponsor 2" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/3.png" alt="Sponsor 3" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/4.png" alt="Sponsor 4" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/5.png" alt="Sponsor 5" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/6.png" alt="Sponsor 6" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/7.png" alt="Sponsor 7" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/8.png" alt="Sponsor 8" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+              <img src="./src/img/sponsor/9.png" alt="Sponsor 9" class="w-64 h-64 object-contain transition-transform transform grayscale hover:grayscale-0 hover:scale-110 hover:rotate-3">
+          </div>
+      </div>
+        
+    
+    </div>
+  </div>
+  </section>
+  <!-- END Section SPONSOR -->
+  
+  <section class="bg-[#001A55] min-h-screen hero" id="Contact">
+  
+    <footer class="container gap-24 mx-auto px-6 py-10 text-white flex flex-col md:flex-row justify-center items-center">
+      <div class="flex flex-col items-center md:items-start gap-24">
+          <img src="./src/img/logo.png" alt="Supri Bengkel Logo" class="w-64">
+          <div class="text-center md:text-left">
+            <h3 class="font-bold uppercase">Contact Us</h3>
+            <p class="text-sm">08122647206 (WhatsApp)</p>
+            <p class="text-sm">info@supribengkel.com</p>
+            <div class="flex gap-8 mt-4">
+                <a href="#" class="text-white text-2xl hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white text-2xl hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white text-2xl hover:text-gray-300"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="text-white text-2xl hover:text-gray-300"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+      </div>
+  
+      <div class=" w-96 flex flex-row">
+        <div class="text-center md:text-left">
+            
+            <div class="">
+                <div class="max-w-lg w-full p-4 bg-white shadow-lg rounded-2xl">
+                  <div class="w-full  overflow-hidden rounded-lg">
+                    
+                    <h3 class="font-bold text-gray-900 uppercase">
+                      <span class="loading loading-ring loading-xs"></span>
+                      Location</h3>
+                    <p class="pb-2 text-sm text-gray-500">JL. KARANGTALUN, RT.01/RW.03, WONOBOYO, KEC. WONOGIRI, KABUPATEN WONOGIRI, JAWA TENGAH 57615G</p>
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:200px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=supri+bengkel+Jl.+Karangtalun,+RT.01/RW.03,+Wonoboyo,+Kec.+Wonogiri,+Kabupaten+Wonogiri,+Jawa+Tengah+57615&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="code-for-google-map" href="https://www.bootstrapskins.com/themes" id="auth-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+                    
+                </div>
+            </div>
+
+    
+            </div>
+        </div>
+        
+  
+  
+  
+      </div>
+  </footer>
+  
+  </section>
+
+
+
+  <script src="./src/js/script.js"></script>
+  </body>
+  </html>

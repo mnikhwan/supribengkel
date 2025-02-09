@@ -11,7 +11,7 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
       <!-- END CDN Framework daisyUi -->
-  
+   
   
       <!-- Custom css -->
       <link rel="stylesheet" href="./src/css/custom.css">
@@ -23,10 +23,12 @@
       
     <nav id="Navbar">
       <div class="navbar bg-zinc-200 px-8 fixed z-10 w-full">
-        <div class="flex items-center justify-between w-full">
-          <a id="logo" class="btn btn-ghost text-xl">
+        <div class="flex items-center justify-between w-full flex-col">
+          
+          <a id="logocs"  class=" sm:hidden lg:hidden  btn btn-ghost text-xl">
             <img src="./src/img/logo.png" alt="Logo" class="w-40">
           </a>
+          
     
           <!-- Button to toggle the menu in mobile -->
           <div class="lg:hidden">
@@ -38,35 +40,45 @@
           </div>
     
           <!-- Menu items for desktop -->
-          <div class="hidden lg:flex flex-none">
+          <div class="hidden lg:flex flex-none justify-between w-full">
+            <a   class="  btn btn-ghost text-xl">
+              <img src="./src/img/logo.png" alt="Logo" class="w-40">
+            </a>
             <ul class="menu text-gray-700 menu-horizontal px-1">
               <li><a href="">HOME</a></li>
               <li><a href="">ABOUT</a></li>
               <li><a href="#Fasilitas">SERVICES</a></li>
-              <li><a href="">ARTICLE</a></li>
+              <li><a href="">MEDIA</a></li>
               <li><a href="#Contact">CONTACT</a></li>
             </ul>
           </div>
+
+
+          <!-- Dropdown for mobile -->
+          <div id="mobile-menu" class="lg:hidden hidden bg-zinc-200 w-full mt-4">
+            <ul class="menu text-gray-700 p-4">
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="#Fasilitas">SERVICES</a></li>
+              <li><a href="">MEDIA</a></li>
+              <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+          </div>
+
+
         </div>
     
-        <!-- Dropdown for mobile -->
-        <div id="mobile-menu" class="lg:hidden hidden bg-zinc-200 w-full mt-4">
-          <ul class="menu text-gray-700 p-4">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="#Fasilitas">SERVICES</a></li>
-            <li><a href="">ARTICLE</a></li>
-            <li><a href="#Contact">CONTACT</a></li>
-          </ul>
-        </div>
+
+
+
       </div>
     </nav>
     
     
   
       <!-- Section hero ATAS -->
-       <section class="Main-Hero flex" id="MainHero">
-          <div class="hero min-h-screen" style="background-image: url('./src/img/herobg.png');">
+       <section class="Main-Hero flex " id="MainHero">
+          <div class="hero min-h-screen " style="background-image: url('./src/img/herobg.png');">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content flex text-neutral-content text-left items-start justify-start content-start">
             <div class="">
@@ -106,7 +118,7 @@
                           <div class="badge badge-warning">BEST</div>
                         </h2>
                         <p class="text-balance text-wrap text-center text-zinc-300">
-                          Jaga performa dan keamanan kendaraan Anda dengan spooring & balancing rutin. Kami menawarkan layanan spooring 3D dan balancing presisi untuk memastikan kendaraan Anda dalam kondisi prima
+                          Jaga performa dan keamanan kendaraan Anda dengan spooring & balancing rutin. Kami menawarkan layanan spooring 3D dan balancing presisi untuk memastikan kendaraan Anda dalam kondisi prima.
                         </p>
                         <div class="card-actions justify-center">
                           <div class="badge badge-outline">
@@ -130,15 +142,15 @@
   
   
   
-              <div class=" grid grid-cols-3 gap-4">
+              <div class=" lg:grid lg:grid-cols-4 lg:gap-4 sm:grid sm:grid-cols-1 sm:grid-rows-4 sm:gap-8 ">
   
                   <div class="card bg-zinc-100 w-full shadow-xl">
                       <div class="card-body">
                         <h2 class="card-title text-blue-950">
                           Tune-Up
-                          <div class="badge badge-warning">NEW</div>
                         </h2>
-                        <p class="text-balance text-wrap text-justify text-zinc-400">
+                        <div class="badge badge-warning font-semibold">NEW</div>
+                        <p class="text-balance text-wrap text-justify text-zinc-400 ">
                           Perpanjang usia mesin mobil Anda dengan tune-up berkala. Investasi kecil untuk mencegah kerusakan yang lebih parah.
                         </p>
                         <div class="card-actions justify-end">
@@ -158,9 +170,9 @@
                       <div class="card-body">
                         <h2 class="card-title text-blue-950">
                           Body Repair
-                          <div class="badge badge-warning">NEW</div>
                         </h2>
-                        <p class="text-balance text-wrap text-justify text-zinc-400">
+                        <div class="badge badge-warning font-semibold">NEW</div>
+                        <p class="text-balance text-wrap text-justify text-zinc-400 break-normal">
                           Kembalikan kilau mobil Anda seperti baru! Layanan body repair profesional dengan hasil yang memuaskan.
                         </p>
                         <div class="card-actions justify-end">
@@ -182,10 +194,34 @@
                       <div class="card-body">
                         <h2 class="card-title text-blue-950">
                           Jasa Perawatan Rutin
-                          <div class="badge badge-warning">NEW</div>
+                          
                         </h2>
+                        <div class="badge badge-warning font-semibold">NEW</div>
                         <p class="text-balance text-wrap text-justify text-zinc-400">
                           Rawat mobil Anda seperti merawat diri sendiri! Dengan perawatan rutin di bengkel kami, mobil Anda akan selalu dalam kondisi prima, siap menemani setiap perjalanan Anda. Kami menawarkan layanan lengkap, mulai dari ganti oli, filter, pengecekan rem dll.
+                        </p>
+                        <div class="card-actions justify-end">
+                          <div class="badge badge-outline">
+                              <div class="rating rating-xs">
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled />
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" disabled/>
+                                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked="checked" disabled/>
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="card bg-zinc-100 w-full shadow-xl">
+                      <div class="card-body">
+                        <h2 class="card-title text-blue-950 text-left">
+                          
+                          Overhaul Power Sterig
+                        </h2>
+                        <div class="badge badge-warning font-semibold">NEW</div>
+                        <p class="text-balance text-wrap text-justify text-zinc-400 ">
+                          Perpanjang usia mesin mobil Anda dengan tune-up berkala. Investasi kecil untuk mencegah kerusakan yang lebih parah.
                         </p>
                         <div class="card-actions justify-end">
                           <div class="badge badge-outline">
@@ -225,7 +261,7 @@
   
   
   
-              <div class="grid grid-cols-3 grid-rows-3 gap-4 p-4">
+              <div class="lg:grid lg:grid-cols-3 lg:grid-rows-3 sm:grid-cols-1 sm:grid-rows-6 gap-4 p-4">
   
                   <div class="card bg-gray-800 shadow-xl rounded-lg overflow-hidden">
                     <img src="./src/img/thumb1.png" alt="Image 1" class="w-full h-48 object-cover">
@@ -318,7 +354,7 @@
   </section>
   <!-- END Section SPONSOR -->
   
-  <section class="bg-[#001A55] min-h-screen hero" id="Contact">
+  <section class="bg-[#001A55] min-h-screen hero pb-[8rem] " id="Contact">
   
     <footer class="container gap-24 mx-auto px-6 py-10 text-white flex flex-col md:flex-row justify-center items-center">
       <div class="flex flex-col items-center md:items-start gap-24">
@@ -347,7 +383,7 @@
                       <span class="loading loading-ring loading-xs"></span>
                       Location</h3>
                     <p class="pb-2 text-sm text-gray-500">JL. KARANGTALUN, RT.01/RW.03, WONOBOYO, KEC. WONOGIRI, KABUPATEN WONOGIRI, JAWA TENGAH 57615G</p>
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:200px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=supri+bengkel+Jl.+Karangtalun,+RT.01/RW.03,+Wonoboyo,+Kec.+Wonogiri,+Kabupaten+Wonogiri,+Jawa+Tengah+57615&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="code-for-google-map" href="https://www.bootstrapskins.com/themes" id="auth-map-data">premium bootstrap themes</a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+                    <div class="lg:w-[500px] lg:h-[200px] sm:w-[250px] sm:h-[100px]" style="max-width:100%;overflow:hidden;color:red;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=supri+bengkel+Jl.+Karangtalun,+RT.01/RW.03,+Wonoboyo,+Kec.+Wonogiri,+Kabupaten+Wonogiri,+Jawa+Tengah+57615&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="code-for-google-map"  id="auth-map-data"></a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
                     
                 </div>
             </div>
